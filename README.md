@@ -1,2 +1,2 @@
-# Crypto-Python
-Implementation of crypto in Python for study and educational purposes only
+# AES-Python
+Implementation of AES in Python for study and educational purpose
