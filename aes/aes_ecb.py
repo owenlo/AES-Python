@@ -4,12 +4,10 @@ AES encryption and decryption using Electronic Codebook (ECB) method
 
 import key_schedule, constants
 
-def encrypt(plaintext, key, size=128):
-    key = key_schedule.expand_key(key)
-    return encrypt_core(plaintext, key, size)
-
-def encrypt_core(plaintext, key, size=128):   
+def encrypt(plaintext, key, size=128):    
     aes_round = 0
+
+    key = key_schedule.expand_key(key, 128)
 
     if (size ==128):
         aes_total_rounds = 10
